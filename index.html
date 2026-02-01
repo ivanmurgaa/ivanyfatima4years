@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - 4 Años Juntos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Escena: Playa Nocturna -->
+    <div id="escena-playa" class="escena activa">
+        <!-- Contador de tiempo -->
+        <div class="contador-tiempo">
+            <div class="tiempo-item">
+                <span id="años" class="numero">0</span>
+                <span class="etiqueta">Años</span>
+            </div>
+            <div class="tiempo-item">
+                <span id="meses" class="numero">0</span>
+                <span class="etiqueta">Meses</span>
+            </div>
+            <div class="tiempo-item">
+                <span id="dias" class="numero">0</span>
+                <span class="etiqueta">Días</span>
+            </div>
+            <div class="tiempo-item">
+                <span id="horas" class="numero">00</span>
+                <span class="etiqueta">Horas</span>
+            </div>
+            <div class="tiempo-item">
+                <span id="minutos" class="numero">00</span>
+                <span class="etiqueta">Minutos</span>
+            </div>
+            <div class="tiempo-item">
+                <span id="segundos" class="numero">00</span>
+                <span class="etiqueta">Segundos</span>
+            </div>
+        </div>
+
+        <!-- Cielo nocturno -->
+        <div class="cielo">
+            <div class="luna"></div>
+            <div class="estrellas" id="estrellas"></div>
+        </div>
+
+        <!-- Mar y olas -->
+        <div class="mar">
+            <div class="ola ola1"></div>
+            <div class="ola ola2"></div>
+            <div class="ola ola3"></div>
+        </div>
+
+        <!-- Arena de la playa -->
+        <div class="arena"></div>
+
+        <!-- Cuadro de museo dorado -->
+        <div class="cuadro-museo">
+            <div class="marco-oro">
+                <img id="foto-cuadro" src="fotos/foto-especial.jpg" alt="Nuestra foto especial">
+            </div>
+        </div>
+
+        <!-- Mensaje de aniversario -->
+        <div class="mensaje-aniversario">
+            <h1>Te amo por siempre <3</h1>
+        </div>
+
+        <!-- Botón de música -->
+        <button id="btn-musica" class="btn-musica">
+            <span class="icono-musica">🎵</span>
+        </button>
+
+        <audio id="audio-musica" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+            <source src="musica.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
